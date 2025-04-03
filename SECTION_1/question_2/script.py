@@ -1,14 +1,10 @@
-def write_names_to_file(filename, names=[]):
-    names = []
-
-    with open("names.txt","w") as filename:
-            filename.write(str(names.append(names)))
-
-    with open("names.txt", "r") as filename:
-        your_names = filename.readlines()
-        print(your_names)
+def write_names_to_file(names,filename= 'names.txt'):
+    with open(filename,"w") as file:
+        for name in names:
+            file.write(name + '\n')
 
 
 
 
-write_names_to_file("names.txt",["arantis","mola"])
+
+write_names_to_file(['alice','lois'])

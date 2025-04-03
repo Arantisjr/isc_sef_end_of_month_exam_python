@@ -1,5 +1,10 @@
-def filter_even_numbers(lst,x):
-    filter(list(lst), x % 2 == 0)
+def filter_even_numbers(lst):
+    even_numbers = list(filter(lambda x: x % 2 == 0,lst))
+    print(even_numbers)
 
 
-    print(filter_even_numbers([1,2,3,4,5,6]))
+
+filter_even_numbers([1,2,3,4,5,6])
+
+
+
