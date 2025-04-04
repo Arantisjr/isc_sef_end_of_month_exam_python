@@ -19,4 +19,5 @@ class Student(Person):
      
             
 
-student1 = Student.display_details("arantis")
+student1 = Student.display_details("arantis",17,49,20)
+print(student1)
